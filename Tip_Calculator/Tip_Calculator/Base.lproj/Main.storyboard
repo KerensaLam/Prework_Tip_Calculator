@@ -48,13 +48,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cw-yx-ACZ">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" text="40" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9Y-aP-YqZ">
                                         <rect key="frame" x="51" y="22" width="182" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
-                                            <action selector="cal_tip_bill:" destination="BYZ-38-t0r" eventType="editingChanged" id="Wjc-7x-lff"/>
+                                            <action selector="cal_tip_bill:" destination="BYZ-38-t0r" eventType="editingChanged" id="ROf-bd-7OW"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -126,7 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="billAmtLabel" destination="0nc-4v-ALm" id="sBA-zj-wkY"/>
-                        <outlet property="billAmtTextField" destination="3cw-yx-ACZ" id="dgk-ty-v12"/>
+                        <outlet property="billAmtTextField" destination="h9Y-aP-YqZ" id="Vaz-xL-JHM"/>
                         <outlet property="tipAmtLabel" destination="6U7-tL-s4u" id="ge0-IR-hwH"/>
                         <outlet property="tipPercentageSeg" destination="zco-Ci-sl0" id="W0Q-dD-rjg"/>
                         <outlet property="totalAmtLabel" destination="le8-OK-Mk0" id="lY0-We-jdA"/>
