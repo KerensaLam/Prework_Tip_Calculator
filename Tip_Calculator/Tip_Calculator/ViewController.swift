@@ -12,10 +12,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var billAmtTextField:UITextField!
     @IBOutlet weak var tipPercentageSeg:UISegmentedControl!
     @IBOutlet weak var tipAmtLabel:UILabel!
+    @IBOutlet weak var tipLabel:UILabel!
     @IBOutlet weak var totalAmtLabel:UILabel!
+    @IBOutlet weak var totalLabel:UILabel!
+    @IBOutlet weak var textColorChangeButton: UIButton!
+    @IBOutlet weak var titleLabel:UILabel!
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        textColorChangeButton.layer.shadowColor = UIColor.orange.cgColor
+        textColorChangeButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        textColorChangeButton.layer.shadowRadius = 5
+        textColorChangeButton.layer.shadowOpacity = 1.0
     }
     
     @IBAction func cal_tip_bill(_ sender: Any){
@@ -29,6 +37,11 @@ class ViewController: UIViewController {
         totalAmtLabel.text = String(format:"$%0.2f",totalAmt)
     }
 
-    
+    @IBAction func change_text_color(_ sender: Any){
+        titleLabel.textColor = UIColor.blue
+        billAmtLabel.textColor = UIColor.systemBlue
+        tipLabel.textColor = UIColor.systemBlue
+        totalLabel.textColor=UIColor.systemBlue
+    }
 }
 
